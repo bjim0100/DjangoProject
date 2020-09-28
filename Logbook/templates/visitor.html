@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{%block title%} Visitor {%endblock%}
+
+{%block body%}
+
+
+    <h1>This is our Newspage</h1>
+
+<!--<div class="container">-->
+<!--<form action="" method="post">-->
+<!--    {%csrf_token%}-->
+<!--{{visitorform.as_p}}-->
+<!--    {{visitorform.name}}-->
+<!--    {{visitorform.visitor_department}}-->
+<!--    <input type="submit" class="btn btn-success" value="submit">-->
+<!--</form>-->
+
+<!--   </div>-->
+<!-- <form action="{%url 'home'%}" method="post">-->
+
+<!--      {%csrf_token%}-->
+
+<!--      <div class="form-group">-->
+<!--       <label>Username</label>-->
+<!--            {{visitorform.name}}-->
+
+<!--   </div>-->
+<!--       <div class="form-group">-->
+<!--       <label>Visitor Department</label>-->
+<!--         {{visitorform.visitor_department}}-->
+
+<!--   </div>-->
+
+<!--   <div class="form-group">-->
+<!--       <label>Time</label>-->
+<!--          {{visitorform.time}}-->
+
+<!--   </div>-->
+<!--       <div class="form-group">-->
+<!--       <label>Visitor Name</label>-->
+<!--       {{visitorform.visitor_name}}-->
+<!--   </div>-->
+<!--  <button type="submit" class="btn btn-success">Submit</button>-->
+
+<!--      </form>-->
+<div id="bg">
+  <div class="module">
+    <ul>
+
+      <li class="tab activeTab"><img src="https://i.imgur.com/Fk1Urva.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="https://i.imgur.com/ZsRgIDD.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="https://i.imgur.com/34Q50wo.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="https://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
+    </ul>
+
+    <form class="form" method="post" action="{%url 'home'%}">
+        {%csrf_token%}
+        <label>Visitor Name:</label><br>
+      {{visitorform.name}} <br>
+        <label>visitor department:</label><br>
+      {{visitorform.visitor_department}} <br>
+        <label>visitor name:</label><br>
+       {{visitorform.visitor_name}}
+      <input type="button" value="Submit" class="button" />
+    </form>
+  </div>
+</div>
+
+
+
+<!--<p class="texto">AMALITECH</p>-->
+<!--<div class="Registro">-->
+<!--<form method="post" action="{%url 'home'%}">-->
+<!-- {%csrf_token%}-->
+<!--<span class="fontawesome-user"></span> <label>Username</label>-->
+<!--            {{visitorform.name}}-->
+<!--<span class="fontawesome-envelope-alt"></span><label>Visitor Department</label>-->
+<!--         {{visitorform.visitor_department}}-->
+<!--<span class="fontawesome-lock"></span><label>Visitor Name</label>-->
+<!--       {{visitorform.visitor_name}}-->
+<!--			<input type="submit" value="Registrar" title="Registra tu cuenta">-->
+<!--</form>-->
+<!--</div>-->
+
+
+
+
+{%endblock%}
